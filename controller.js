@@ -3,6 +3,8 @@ var lastIndex = window.location.href.lastIndexOf('/');
 let baseUrl = window.location.href.substring(0, lastIndex + 1)
 let currentPage = window.location.href.substring(lastIndex + 1).split('.')[0];
 
+let max = 6;
+
 function fetchNumber() {
 
     var myHeaders = new Headers();
@@ -17,7 +19,7 @@ function fetchNumber() {
     fetch("https://api.n2048.com/step", requestOptions)
       .then(response => response.json())
       .then(data => {
-        if (data.Number != currentPage) {
+        if (data.Number != currentPage && data.Number <= max) {
             window.location.replace(baseUrl + data.Number + '.html');
         }
       })
