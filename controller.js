@@ -3,7 +3,7 @@ var lastIndex = window.location.href.lastIndexOf('/');
 let baseUrl = window.location.href.substring(0, lastIndex + 1)
 let currentPage = window.location.href.substring(lastIndex + 1).split('.')[0];
 
-let max = 7;
+let max = 8;
 
 function fetchNumber() {
 
