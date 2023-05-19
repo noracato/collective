@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Collective interface</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="divider">
+            <p>SOUNDBANK</p>
+        </div>
+        <div class="row">
+            <p class="link">
+                (i) Intro chords (ii) Goodbye (iii) I feel fine (iv) Sound instructions TBD
+            </p>
+        </div>
+        <div class="buttons">
+            <div class="row blacks">
+                <a id="chords" onclick="playSound('intro')"><p>i</p></a>
+                <a id="goodbye" onclick="playSound('goodbye')"><p>ii</p></a>
+            </div>
+            <div class="row blacks">
+                <a id="i-feel-fine" onclick="playSound('speech')"><p>iii</p></a>
+                <a id="inst"><p>iv</p></a>
+            </div>
+        </div>
+        <div class="divider">
+            <p>I WANT TO TELL YOU MY STORY</p>
+        </div>
+        <div class="buttons">
+            <div class="row blacks">
+                <a onclick="playByText('el-GR','I want to tell you my story', 1)"><p>T</p></a>
+                <a onclick="playByText('en-IN','I want to tell you my story', 1)"><p>E</p></a>
+            </div>
+            <div class="row blacks">
+                <a onclick="playByText('ja-JA','I want to tell you my story', 1)"><p>L</p></a>
+                <a onclick="playByText('it-IT','I want to tell you my story', 1)"><p>L</p></a>
+            </div>
+            <div class="row blacks">
+                <a onclick="playByText('sv-SE','I want to tell you my story', 1)"><p>t1</p></a>
+                <a onclick="playByText('zh-HK','I want to tell you my story', 1)"><p>t2</p></a>
+            </div>
+            <div class="row blacks">
+                <a onclick="playByText('th-TH','I want to tell you my story', 1)"><p>t3</p></a>
+                <a onclick="playByText('nl-NL','I want to tell you my story', 1)"><p>t4</p></a>
+            </div>
+        </div>
+        <div class="divider">
+            <p>BEATBOX</p>
+        </div>
+        <div id="buttons" class="buttons">
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="synthesis.js"></script>
+    <script src="beat.js"></script>
+  </body>
+</html>
