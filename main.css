@@ -18,7 +18,7 @@ body {
     width: 100%;
 }
 .divider p {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .buttons {
@@ -35,7 +35,6 @@ body {
 
 .buttons .blacks a {
     font-size: 10em;
-    /* padding: 2rem 5rem 2rem 5rem; */
     background-color: black;
     border-radius: 10rem;
     min-height: 15rem;
@@ -71,6 +70,7 @@ body {
 
 .link.instruction {
     font-size: 10rem;
+    margin-block-start: 0;
 }
 
 .controls {
